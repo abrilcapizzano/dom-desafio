@@ -13,9 +13,11 @@ article{
     border: 2px solid black;
     color: white;
 }
+p{
+    font-size: 24px}
 .item{
     background-color: rgb(33, 33, 33);
 }
 .imagen{
-width: 260px;
+width: 200px;
 }

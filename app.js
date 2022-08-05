@@ -15,10 +15,7 @@ const listaProductos = document.getElementById('seccion-productos')
 for (const producto of productos) {
     const article = document.createElement('article')
     article.className = 'item'
-    article.innerHTML = `${producto.nombre} ${producto.precio} pesos
+    article.innerHTML = `<p> ${producto.nombre} ${producto.precio} pesos</p>
                         <div> <img class="imagen" src = ${producto.img} alt = " " </div>`
 listaProductos.append(article)
 }
-
-
-console.log(listaProductos)
