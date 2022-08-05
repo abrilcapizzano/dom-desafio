@@ -15,11 +15,12 @@ for (const producto of productos) {
     const article = document.createElement('article')
     article.className = 'item'
     const p = document.createElement('p')
-    p.className = 'titulo'
-    p.innerHTML = `<p> ${producto.nombre} ${producto.precio} pesos`
+    p.innerHTML = `${producto.nombre} ${producto.precio} pesos`
     const div = document.createElement('div')
-    div.className = 'div'
-    div.innerHTML =     '<div><img src="./img/productos.jpg" width="200px" alt=""></div>'
+    div.innerHTML ='<img src="./img/productos.jpg" width="200px" alt="">'
     article.append(p, div)
     listaProductos.append(article)
 }
+
+
+console.log(listaProductos)
