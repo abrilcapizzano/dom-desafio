@@ -16,10 +16,10 @@ for (const producto of productos) {
     article.className = 'item'
     const p = document.createElement('p')
     p.className = 'titulo'
-    p.innerText = producto.nombre + ' ' + producto.precio + ' pesos'
+    p.innerHTML = `<p> ${producto.nombre} ${producto.precio} pesos`
     const div = document.createElement('div')
     div.className = 'div'
-    div.innerHTML = '<div> <img src="./img/productos.jpg"  width="200px" alt=""></div>'
+    div.innerHTML =     '<div><img src="./img/productos.jpg" width="200px" alt=""></div>'
     article.append(p, div)
     listaProductos.append(article)
 }
